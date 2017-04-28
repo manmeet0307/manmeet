@@ -19,14 +19,15 @@ $(function() {
             $.ajax({
                 url: "https://www.enformed.io/6ji8idlt",
                 method: "POST",
-               data:{
-                name:name,
-                reply:email,
-                 email:email,
-                message:message,
-                subject:'Message submission',
+                data:{
+                    name:name,
+                    reply:email,
+                    email:email,
+                    message:message,
+                    subject:'Message submission',
                 },
-                
+                dataType: "json",
+                accepts: "application/json",
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
