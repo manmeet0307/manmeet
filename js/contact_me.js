@@ -17,12 +17,14 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://getform.org/f/35876992-b155-46cd-947a-3a54d724894f",
+                url: "https://www.enformed.io/6ji8idlt",
                 method: "POST",
-                data: {
-                    name: name,
-                    email: email,
-                    message: message
+               data:{
+                name:name,
+                reply:email,
+                 email:email,
+                message:message,
+                subject:'Message submission',
                 },
                 
                 success: function() {
