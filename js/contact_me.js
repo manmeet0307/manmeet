@@ -8,9 +8,9 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var message = $("textarea#message").val();
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
